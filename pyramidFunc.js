@@ -3,10 +3,16 @@ let rows = [];
 const count = 8;
 
 function padRow(rowNum, rowCount) {
-    return character.repeat(rowNum);
+    return " ".repeat(rowCount - rowNum) + character.repeat(2 * rowNum - 1) + " ".repeat(rowCount - rowNum);
 }
 
-for (let i = 0; i < count; i = i + 1) {
-    rows.push(padRow(i + 1, count));
+for (let i = 1; i <= count; i++) {
+    rows.push(padRow(i, count));
 }
 console.log(rows);
+
+let pyramid = "";
+for (const row of rows) {
+    pyramid += row + "\n";
+}
+console.log(pyramid);
