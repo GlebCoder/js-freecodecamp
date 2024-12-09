@@ -6,8 +6,11 @@ function padRow(rowNum, rowCount) {
     return " ".repeat(rowCount - rowNum) + character.repeat(2 * rowNum - 1) + " ".repeat(rowCount - rowNum);
 }
 
-for (let i = 1; i <= count; i++) {
+/*for (let i = 1; i <= count; i++) {
     rows.push(padRow(i, count));
+}*/
+while (rows.length < count) {
+    rows.push(padRow(rows.length + 1, count));
 }
 console.log(rows);
 
