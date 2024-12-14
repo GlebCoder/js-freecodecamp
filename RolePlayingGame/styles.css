@@ -1,3 +1,24 @@
 body {
-    background: #0a0a23;
+    background-color: #0a0a23;
+}
+
+#text {
+    background-color: #0a0a23;
+    color: #ffffff;
+    padding: 10px;
+}
+
+#game {
+    max-width: 500px;
+    /* Maximum width of 500px */
+    max-height: 400px;
+    /* Maximum height of 400px */
+    background-color: #ffffff;
+    /* White background color */
+    color: #ffffff;
+    /* White text color (invisible on white background!) */
+    margin: 30px auto 0;
+    /* Top margin: 30px, bottom: 0px, auto left/right for centering */
+    padding: 10px;
+    /* 10px padding on all sides */
 }
